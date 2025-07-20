@@ -10,7 +10,17 @@ const HeroSection = () => {
     <section id="home" className="min-h-screen flex items-center hero-gradient">
       <div className="container mx-auto px-6 py-20">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-8">
+          <div className="mb-8 flex flex-col items-center">
+            <div className="relative mb-8">
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl">
+                <img 
+                  src="/lovable-uploads/3b28678a-3f3e-4a67-8af5-58f357d3020c.png" 
+                  alt="Trinath Anantham"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-background"></div>
+            </div>
             <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6">
               Trinath Anantham
             </h1>

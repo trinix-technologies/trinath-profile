@@ -153,15 +153,17 @@ const TechStackSection = () => {
                 </div>
               </CardHeader>
               <CardContent>
-                <div className="flex flex-wrap gap-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {stack.technologies.map((tech) => (
-                    <Badge
+                    <div
                       key={tech}
-                      variant="secondary"
-                      className="text-xs transition-smooth hover:bg-primary hover:text-primary-foreground cursor-default"
+                      className="flex items-center gap-3 p-3 rounded-lg bg-muted/30 hover:bg-muted/50 transition-smooth group"
                     >
-                      {tech}
-                    </Badge>
+                      <div className="w-2 h-2 bg-primary rounded-full group-hover:scale-125 transition-transform"></div>
+                      <span className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
+                        {tech}
+                      </span>
+                    </div>
                   ))}
                 </div>
               </CardContent>
