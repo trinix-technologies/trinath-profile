@@ -1,6 +1,6 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Code, Database, Cloud, Cog, Layers, Monitor } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Code, Database, Cloud, Cog, Layers, Monitor } from "lucide-react";
 
 const TechStackSection = () => {
   const techStacks = [
@@ -8,66 +8,118 @@ const TechStackSection = () => {
       category: "Backend Development",
       icon: <Code className="h-5 w-5" />,
       technologies: [
-        "Java (SE 7+)", "Spring Boot", "Groovy", "Dart", "Node.js", 
-        "Express.js", "NestJS", "J2EE", "RESTful APIs", "GraphQL"
-      ]
+        "Java (SE 7+)",
+        "Spring Boot",
+        "Groovy",
+        "Dart",
+        "Node.js",
+        "Express.js",
+        "NestJS",
+        "J2EE",
+        "RESTful APIs",
+        "GraphQL",
+      ],
     },
     {
-      category: "Frontend Development", 
+      category: "Frontend Development",
       icon: <Layers className="h-5 w-5" />,
       technologies: [
-        "ReactJS", "Next.js", "Redux", "HTML5", "CSS3", "JavaScript", 
-        "Material UI", "Kendo UI", "Tailwind CSS", "React Native", "Electron"
-      ]
+        "ReactJS",
+        "Next.js",
+        "Redux",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Material UI",
+        "Kendo UI",
+        "Tailwind CSS",
+        "React Native",
+        "Electron",
+      ],
     },
     {
       category: "Databases & Queues",
       icon: <Database className="h-5 w-5" />,
       technologies: [
-        "MongoDB", "PostgreSQL", "MySQL", "Oracle", "Redis", 
-        "RabbitMQ", "Google Pub/Sub", "Schema Design", "Indexing", "Optimization"
-      ]
+        "MongoDB",
+        "PostgreSQL",
+        "MySQL",
+        "Oracle",
+        "Redis",
+        "RabbitMQ",
+        "Google Pub/Sub",
+        "Schema Design",
+        "Indexing",
+        "Optimization",
+      ],
     },
     {
       category: "Cloud & DevOps",
       icon: <Cloud className="h-5 w-5" />,
       technologies: [
-        "AWS (EC2, S3, Lambda, RDS)", "Google Cloud Platform", "Docker", 
-        "PM2", "Jenkins", "Git", "Heroku", "CI/CD", "Infrastructure Management"
-      ]
+        "AWS (EC2, S3, Lambda, RDS)",
+        "Google Cloud Platform",
+        "Docker",
+        "PM2",
+        "Jenkins",
+        "Git",
+        "Heroku",
+        "CI/CD",
+        "Infrastructure Management",
+      ],
     },
     {
       category: "AI & Agentic Systems",
       icon: <Cog className="h-5 w-5" />,
       technologies: [
-        "LangChain", "Mastra", "OpenAI LLMs", "Prompt Engineering", 
-        "Autonomous Agent Workflows", "AI Integration"
-      ]
+        "LangChain",
+        "Mastra",
+        "OpenAI LLMs",
+        "Prompt Engineering",
+        "Autonomous Agent Workflows",
+        "AI Integration",
+      ],
     },
     {
       category: "Architecture & Design",
       icon: <Monitor className="h-5 w-5" />,
       technologies: [
-        "System Design", "Microservices", "Event-Driven Architecture", 
-        "API Design", "Performance Tuning", "Scalability", "Multi-Tenancy"
-      ]
+        "System Design",
+        "Microservices",
+        "Event-Driven Architecture",
+        "API Design",
+        "Performance Tuning",
+        "Scalability",
+        "Multi-Tenancy",
+      ],
     },
     {
       category: "Monitoring & Tools",
       icon: <Monitor className="h-5 w-5" />,
       technologies: [
-        "ELK Stack", "Prometheus", "Grafana", "NewRelic", "Terraform", 
-        "GitHub Actions", "GitLab CI/CD", "Postman", "Swagger/OpenAPI"
-      ]
+        "ELK Stack",
+        "Prometheus",
+        "Grafana",
+        "NewRelic",
+        "Terraform",
+        "GitHub Actions",
+        "GitLab CI/CD",
+        "Postman",
+        "Swagger/OpenAPI",
+      ],
     },
     {
       category: "Methodologies",
       icon: <Cog className="h-5 w-5" />,
       technologies: [
-        "Agile (Scrum, Kanban)", "Test-Driven Development (TDD)", 
-        "OKRs", "Code Reviews", "Leadership", "Mentoring"
-      ]
-    }
+        "Agile (Scrum, Kanban)",
+        "Test-Driven Development (TDD)",
+        "OKRs",
+        "Code Reviews",
+        "Leadership",
+        "Mentoring",
+      ],
+    },
   ];
 
   return (
@@ -78,28 +130,34 @@ const TechStackSection = () => {
             Technical Expertise
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            11+ years of experience across backend, frontend, and cloud-based SaaS platforms. 
-            Specialized in building scalable systems and leading full-stack engineering teams.
+            11+ years of experience across backend, frontend, and cloud-based
+            SaaS platforms. Specialized in building scalable systems and leading
+            full-stack engineering teams.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {techStacks.map((stack) => (
-            <Card key={stack.category} className="card-gradient hover-lift border-border/50 h-full">
+            <Card
+              key={stack.category}
+              className="card-gradient hover-lift border-border/50 h-full"
+            >
               <CardHeader className="pb-4">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="p-2 rounded-lg bg-primary/10 text-primary">
                     {stack.icon}
                   </div>
-                  <CardTitle className="text-lg leading-tight">{stack.category}</CardTitle>
+                  <CardTitle className="text-lg leading-tight">
+                    {stack.category}
+                  </CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
                   {stack.technologies.map((tech) => (
-                    <Badge 
-                      key={tech} 
-                      variant="secondary" 
+                    <Badge
+                      key={tech}
+                      variant="secondary"
                       className="text-xs transition-smooth hover:bg-primary hover:text-primary-foreground cursor-default"
                     >
                       {tech}
@@ -109,22 +167,6 @@ const TechStackSection = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        {/* Certifications Section */}
-        <div className="mt-16 text-center">
-          <h3 className="text-2xl font-semibold text-foreground mb-8">Professional Certifications</h3>
-          <div className="flex flex-wrap justify-center gap-4 max-w-4xl mx-auto">
-            <Badge variant="outline" className="px-4 py-2 text-sm">
-              Oracle Certified Java Programmer (Java SE 7)
-            </Badge>
-            <Badge variant="outline" className="px-4 py-2 text-sm">
-              MongoDB for Developers - MongoDB University
-            </Badge>
-            <Badge variant="outline" className="px-4 py-2 text-sm">
-              Oracle Database SQL Certified Expert
-            </Badge>
-          </div>
         </div>
       </div>
     </section>
