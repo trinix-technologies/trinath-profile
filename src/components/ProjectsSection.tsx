@@ -4,29 +4,28 @@ const ProjectsSection = () => {
   const projects = [
     {
       title: "OneCompiler",
-      description: "Online compiler and IDE platform supporting 60+ programming languages. Built to help developers code, compile, and run programs directly in the browser.",
-      techStack: ["React", "Node.js", "Docker", "Kubernetes", "Redis", "PostgreSQL"],
+      description: "Founded and architected an online IDE platform supporting 60+ programming languages with real-time code execution and sandboxing. Scaled to serve 2 million+ users globally with high availability and performance.",
+      techStack: ["React", "Next.js", "React Native", "Node.js", "MongoDB", "Docker", "AWS", "Linux"],
       githubUrl: "https://github.com/onecompiler",
       demoUrl: "https://onecompiler.com",
     },
     {
-      title: "Microservices Architecture Platform",
-      description: "Scalable microservices platform with auto-scaling, service discovery, and distributed tracing capabilities for enterprise applications.",
-      techStack: ["Java", "Spring Boot", "Docker", "Kubernetes", "Apache Kafka", "MongoDB"],
-      githubUrl: "https://github.com/example/microservices",
+      title: "SaasLabs Engineering Platform",
+      description: "Led engineering teams owning Billing, Balance, and Subscriber services built with NestJS, Node.js, and MySQL. Managed 10+ engineers and oversaw full-stack delivery with React and Remix.",
+      techStack: ["NestJS", "Node.js", "MySQL", "React", "Remix", "GCP", "Kubernetes", "Docker"],
+      githubUrl: "https://github.com/saaslabs",
+      demoUrl: "https://saaslabs.co",
     },
     {
-      title: "Real-time Analytics Dashboard",
-      description: "High-performance analytics dashboard processing millions of events per second with real-time visualizations and alerting system.",
-      techStack: ["React", "Node.js", "ClickHouse", "Apache Kafka", "D3.js", "WebSocket"],
-      githubUrl: "https://github.com/example/analytics",
-      demoUrl: "https://analytics-demo.example.com",
+      title: "Reputation.com Microservices",
+      description: "Developed scalable microservices using Java, Spring Boot, and MongoDB for third-party API integrations. Built admin tools using React and managed log aggregation with ELK Stack on AWS and GCP.",
+      techStack: ["Java", "Spring Boot", "MongoDB", "React", "ELK Stack", "AWS", "GCP"],
+      githubUrl: "https://github.com/reputation-com",
     },
     {
-      title: "Developer Tools Suite",
-      description: "Collection of developer productivity tools including code formatters, linters, and automated testing frameworks used by 10K+ developers.",
-      techStack: ["TypeScript", "Node.js", "CLI", "Jest", "ESLint", "Prettier"],
-      githubUrl: "https://github.com/example/devtools",
+      title: "SplashBI Reporting Platform",
+      description: "Built enterprise reporting UI using React and Kendo UI components. Developed and maintained backend services with Java, Spring Boot, Hibernate, and Oracle DB with OAF framework.",
+      techStack: ["React", "Kendo UI", "Java", "Spring Boot", "Hibernate", "Oracle DB", "OAF"],
     },
   ];
 

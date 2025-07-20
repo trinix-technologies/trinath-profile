@@ -36,10 +36,10 @@ const ContactSection = () => {
                 <div>
                   <p className="font-medium">Email</p>
                   <a 
-                    href="mailto:trinath@example.com" 
+                    href="mailto:trinath.anantham@gmail.com" 
                     className="text-muted-foreground hover:text-primary transition-smooth"
                   >
-                    trinath@example.com
+                    trinath.anantham@gmail.com
                   </a>
                 </div>
               </div>
@@ -49,10 +49,10 @@ const ContactSection = () => {
                 <div>
                   <p className="font-medium">Phone</p>
                   <a 
-                    href="tel:+1234567890" 
+                    href="tel:+919542092091" 
                     className="text-muted-foreground hover:text-primary transition-smooth"
                   >
-                    +1 (234) 567-8900
+                    +91 954 209 2091
                   </a>
                 </div>
               </div>
@@ -61,7 +61,7 @@ const ContactSection = () => {
                 <MapPin className="h-5 w-5 text-primary" />
                 <div>
                   <p className="font-medium">Location</p>
-                  <p className="text-muted-foreground">San Francisco, CA</p>
+                  <p className="text-muted-foreground">KPHB, Hyderabad, India</p>
                 </div>
               </div>
 
@@ -69,7 +69,7 @@ const ContactSection = () => {
                 <p className="font-medium mb-4">Follow Me</p>
                 <div className="flex space-x-4">
                   <a 
-                    href="https://github.com" 
+                    href="https://github.com/trinathanantham" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-smooth"
@@ -77,12 +77,20 @@ const ContactSection = () => {
                     <Github size={24} />
                   </a>
                   <a 
-                    href="https://linkedin.com" 
+                    href="https://www.linkedin.com/in/trinath-anantham-045a19112/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-smooth"
                   >
                     <Linkedin size={24} />
+                  </a>
+                  <a 
+                    href="https://trinath.tech" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-primary transition-smooth"
+                  >
+                    🌐
                   </a>
                 </div>
               </div>

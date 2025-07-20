@@ -15,12 +15,13 @@ const HeroSection = () => {
               Trinath Anantham
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Engineering Manager | Architect | Founder of OneCompiler
+              Engineering Manager | System Architect | Founder - OneCompiler
             </p>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Passionate about building scalable systems, leading engineering teams, 
-              and creating tools that empower developers worldwide. With a strong 
-              background in full-stack development and architecture design.
+              Versatile Engineering Leader with 11+ years of experience across backend, 
+              frontend, and cloud-based SaaS platforms. Skilled in building scalable systems, 
+              leading full-stack teams, and aligning technology with product strategy. 
+              Passionate about mentoring, innovation, and driving end-to-end execution.
             </p>
           </div>
 
@@ -40,7 +41,7 @@ const HeroSection = () => {
 
           <div className="flex justify-center space-x-6">
             <a 
-              href="https://github.com" 
+              href="https://github.com/trinathanantham" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-smooth"
@@ -48,7 +49,7 @@ const HeroSection = () => {
               <Github size={24} />
             </a>
             <a 
-              href="https://linkedin.com" 
+              href="https://www.linkedin.com/in/trinath-anantham-045a19112/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-smooth"
@@ -56,7 +57,7 @@ const HeroSection = () => {
               <Linkedin size={24} />
             </a>
             <a 
-              href="mailto:trinath@example.com"
+              href="mailto:trinath.anantham@gmail.com"
               className="text-muted-foreground hover:text-primary transition-smooth"
             >
               <Mail size={24} />

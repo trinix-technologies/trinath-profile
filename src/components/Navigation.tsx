@@ -9,7 +9,8 @@ const Navigation = () => {
     { href: '#home', label: 'Home' },
     { href: '#projects', label: 'Projects' },
     { href: '#tech-stack', label: 'Tech Stack' },
-    { href: '#education', label: 'Education' },
+    { href: '#education', label: 'Experience' },
+    { href: '#posts', label: 'Posts' },
     { href: '#contact', label: 'Contact' },
   ];
 
