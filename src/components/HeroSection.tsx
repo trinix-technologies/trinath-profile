@@ -14,7 +14,7 @@ const HeroSection = () => {
             <div className="relative mb-8">
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/20 shadow-xl">
                 <img
-                  src="/lovable-uploads/3b28678a-3f3e-4a67-8af5-58f357d3020c.png"
+                  src="/image.png"
                   alt="Trinath Anantham"
                   className="w-full h-full object-cover"
                 />
