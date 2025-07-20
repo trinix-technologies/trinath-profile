@@ -1,22 +1,22 @@
-import { useState } from 'react';
-import { Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { href: '#home', label: 'Home' },
-    { href: '#projects', label: 'Projects' },
-    { href: '#tech-stack', label: 'Tech Stack' },
-    { href: '#education', label: 'Experience' },
-    { href: '#posts', label: 'Posts' },
-    { href: '#contact', label: 'Contact' },
+    { href: "#home", label: "Home" },
+    { href: "#projects", label: "Projects" },
+    { href: "#tech-stack", label: "Tech Stack" },
+    { href: "#education", label: "Experience" },
+    { href: "#posts", label: "Posts" },
+    { href: "#contact", label: "Contact" },
   ];
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    element?.scrollIntoView({ behavior: "smooth" });
     setIsOpen(false);
   };
 
@@ -39,16 +39,13 @@ const Navigation = () => {
                 {item.label}
               </button>
             ))}
-            <Button variant="default" className="ml-4">
+            {/* <Button variant="default" className="ml-4">
               Resume
-            </Button>
+            </Button> */}
           </div>
 
           {/* Mobile Navigation Button */}
-          <button
-            className="md:hidden"
-            onClick={() => setIsOpen(!isOpen)}
-          >
+          <button className="md:hidden" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -66,9 +63,9 @@ const Navigation = () => {
                   {item.label}
                 </button>
               ))}
-              <Button variant="default" className="self-start mt-2">
+              {/* <Button variant="default" className="self-start mt-2">
                 Resume
-              </Button>
+              </Button> */}
             </div>
           </div>
         )}
