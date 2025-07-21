@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
-import { Calendar, Clock, ExternalLink } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { Calendar, Clock, ExternalLink } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 
 interface Post {
   title: string;
@@ -11,94 +12,110 @@ interface Post {
   readTime: string;
   tags: string[];
   slug: string;
+  filePath: string;
+  mdContent: string;
 }
 
 const PostsSection = () => {
+  const navigate = useNavigate();
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // Fetch posts from GitHub repository
+  // Function to fetch all markdown files from local posts directory
+  const fetchLocalMarkdownFiles = async (): Promise<any[]> => {
+    try {
+      // Define the markdown files we want to load
+      const markdownFiles = [
+        { name: "ai-vs-generative-ai", path: "/posts/ai-vs-generative-ai.md" },
+        {
+          name: "microservices-best-practices",
+          path: "/posts/microservices-best-practices.md",
+        },
+      ];
+
+      const filesWithContent = await Promise.all(
+        markdownFiles.map(async (file) => {
+          try {
+            const response = await fetch(file.path);
+            if (!response.ok) {
+              console.error(`Failed to fetch ${file.path}:`, response.status);
+              return null;
+            }
+            const content = await response.text();
+            return {
+              name: file.name,
+              path: file.path,
+              content: content,
+              download_url: file.path,
+            };
+          } catch (error) {
+            return null;
+          }
+        })
+      );
+
+      const validFiles = filesWithContent.filter((file) => file !== null);
+      return validFiles;
+    } catch (error) {
+      return [];
+    }
+  };
+
   useEffect(() => {
     const fetchPostsFromGitHub = async () => {
       try {
         setLoading(true);
-        
-        // Replace with your GitHub username and repository name
-        const username = 'trinathanantham';
-        const repo = 'posts';
-        
-        // Fetch repository contents
-        const response = await fetch(
-          `https://api.github.com/repos/${username}/${repo}/contents`
-        );
-        
-        if (!response.ok) {
-          throw new Error('Failed to fetch posts');
-        }
-        
-        const files = await response.json();
-        
-        // Filter for markdown files
-        const markdownFiles = files.filter((file: any) => 
-          file.name.endsWith('.md') && file.type === 'file'
-        );
-        
-        // Fetch content of each markdown file to extract metadata
-        const postsData = await Promise.all(
-          markdownFiles.map(async (file: any) => {
-            try {
-              const contentResponse = await fetch(file.download_url);
-              const content = await contentResponse.text();
-              
-              // Extract metadata from markdown frontmatter or content
-              const lines = content.split('\n');
-              const title = extractTitle(content, file.name);
-              const summary = extractSummary(content);
-              const tags = extractTags(content);
-              
-              return {
-                title,
-                summary,
-                date: new Date(file.sha ? '2024-01-15' : Date.now()).toISOString().split('T')[0], // Use commit date if available
-                readTime: calculateReadTime(content),
-                tags,
-                slug: file.name.replace('.md', '')
-              };
-            } catch (error) {
-              console.error(`Error processing file ${file.name}:`, error);
-              return null;
+
+        // Fetch all markdown files from local posts directory
+        const markdownFiles = await fetchLocalMarkdownFiles();
+
+        // Process each markdown file
+        const postsData = markdownFiles.map((file: any) => {
+          try {
+            const content = file.content;
+            // Extract date from markdown content using "**Published:**" format
+            const dateMatch = content.match(/\*\*Published:\*\*\s*([^\n]+)/i);
+            let postDate = new Date().toISOString().split("T")[0]; // fallback to current date
+
+            if (dateMatch) {
+              const extractedDate = dateMatch[1].trim();
+              // Try to parse the date and format it as YYYY-MM-DD
+              const parsedDate = new Date(extractedDate);
+              if (!isNaN(parsedDate.getTime())) {
+                postDate = parsedDate.toISOString().split("T")[0];
+              }
             }
-          })
-        );
-        
+
+            // Extract metadata from markdown frontmatter or content
+            const title = extractTitle(content, file.name);
+            const summary = extractSummary(content);
+            const tags = extractTags(content);
+
+            return {
+              title,
+              summary,
+              date: postDate,
+              readTime: calculateReadTime(content),
+              tags,
+              slug: file.name.replace(".md", ""),
+              filePath: file.path,
+              mdContent: content,
+            };
+          } catch (error) {
+            return null;
+          }
+        });
+
         // Filter out null values and sort by date
         const validPosts = postsData
           .filter((post): post is Post => post !== null)
-          .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
-        
+          .sort(
+            (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+          );
+
         setPosts(validPosts);
       } catch (error) {
-        console.error('Error fetching posts from GitHub:', error);
-        // Fallback to mock data if GitHub fetch fails
-        const mockPosts: Post[] = [
-          {
-            title: "Building OneCompiler: Scaling to 2 Million Users",
-            summary: "Deep dive into the architecture decisions and scaling challenges we faced while building OneCompiler, an online IDE supporting 60+ programming languages.",
-            date: "2024-01-15",
-            readTime: "8 min read",
-            tags: ["Architecture", "Scaling", "React", "Node.js"],
-            slug: "building-onecompiler-scaling"
-          },
-          {
-            title: "Microservices at Scale: Lessons from SaasLabs",
-            summary: "Key insights from managing microservices architecture for Billing, Balance, and Subscriber services, including monitoring and DevOps best practices.",
-            date: "2023-12-10",
-            readTime: "6 min read", 
-            tags: ["Microservices", "DevOps", "Kubernetes", "MongoDB"],
-            slug: "microservices-at-scale"
-          }
-        ];
-        setPosts(mockPosts);
+        setPosts([]);
       } finally {
         setLoading(false);
       }
@@ -110,31 +127,61 @@ const PostsSection = () => {
   // Helper functions for parsing markdown content
   const extractTitle = (content: string, filename: string): string => {
     // Try to extract title from frontmatter or first heading
-    const titleMatch = content.match(/^#\s+(.+)$/m) || content.match(/title:\s*['"]?([^'"\n]+)['"]?/);
-    return titleMatch ? titleMatch[1].trim() : filename.replace('.md', '').replace(/-/g, ' ');
+    const titleMatch =
+      content.match(/^#\s+(.+)$/m) ||
+      content.match(/title:\s*['"]?([^'"\n]+)['"]?/);
+    return titleMatch
+      ? titleMatch[1].trim()
+      : filename.replace(".md", "").replace(/-/g, " ");
   };
 
   const extractSummary = (content: string): string => {
-    // Extract summary from frontmatter or first paragraph
-    const summaryMatch = content.match(/summary:\s*['"]?([^'"\n]+)['"]?/) || 
-                         content.match(/description:\s*['"]?([^'"\n]+)['"]?/);
-    
+    // Extract summary from markdown content using "**Description:**" format
+    const descriptionMatch = content.match(
+      /\*\*Description:\*\*\s*([\s\S]*?)(?=\n\n|\n---|\n##|\n###|\n#)/i
+    );
+    if (descriptionMatch) {
+      return descriptionMatch[1].trim();
+    }
+
+    // Fallback: try other common patterns
+    const summaryMatch =
+      content.match(/summary:\s*['"]?([^'"\n]+)['"]?/) ||
+      content.match(/description:\s*['"]?([^'"\n]+)['"]?/);
+
     if (summaryMatch) return summaryMatch[1].trim();
-    
+
     // Fallback: extract first paragraph after title
-    const lines = content.split('\n').filter(line => line.trim());
-    const firstParagraph = lines.find(line => !line.startsWith('#') && !line.includes(':') && line.length > 50);
-    return firstParagraph ? firstParagraph.substring(0, 150) + '...' : 'No summary available';
+    const lines = content.split("\n").filter((line) => line.trim());
+    const firstParagraph = lines.find(
+      (line) => !line.startsWith("#") && !line.includes(":") && line.length > 50
+    );
+    return firstParagraph
+      ? firstParagraph.substring(0, 150) + "..."
+      : "No summary available";
   };
 
   const extractTags = (content: string): string[] => {
-    // Extract tags from frontmatter
-    const tagsMatch = content.match(/tags:\s*\[(.*?)\]/s) || content.match(/tags:\s*([^\n]+)/);
+    // Extract tags from markdown content using the format "**Tags:** tag1, tag2, tag3"
+    const tagsMatch = content.match(/\*\*Tags:\*\*\s*([^\n]+)/i);
     if (tagsMatch) {
       const tagsStr = tagsMatch[1];
-      return tagsStr.split(',').map(tag => tag.trim().replace(/['"\[\]]/g, ''));
+      return tagsStr
+        .split(",")
+        .map((tag) => tag.trim().replace(/['"\[\]]/g, ""));
     }
-    return ['Technical', 'Blog'];
+
+    // Fallback: try other common patterns
+    const fallbackMatch =
+      content.match(/tags:\s*\[(.*?)\]/s) || content.match(/tags:\s*([^\n]+)/i);
+    if (fallbackMatch) {
+      const tagsStr = fallbackMatch[1];
+      return tagsStr
+        .split(",")
+        .map((tag) => tag.trim().replace(/['"\[\]]/g, ""));
+    }
+
+    return ["Technical", "Blog"];
   };
 
   const calculateReadTime = (content: string): string => {
@@ -144,9 +191,9 @@ const PostsSection = () => {
     return `${minutes} min read`;
   };
 
-  const handlePostClick = (slug: string) => {
-    // In real implementation, this would navigate to the full post
-    window.open(`https://github.com/trinathanantham/posts/blob/main/${slug}.md`, '_blank');
+  const handlePostClick = (slug: string, filePath: string) => {
+    // Navigate to the post view page with file path
+    navigate(`/post/${slug}?path=${encodeURIComponent(filePath)}`);
   };
 
   if (loading) {
@@ -174,17 +221,18 @@ const PostsSection = () => {
             Latest Posts
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Insights and experiences from building scalable systems, leading engineering teams, 
-            and creating developer tools that impact millions of users.
+            Insights and experiences from building scalable systems, leading
+            engineering teams, and creating developer tools that impact millions
+            of users.
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto space-y-6">
           {posts.map((post) => (
-            <Card 
-              key={post.slug} 
+            <Card
+              key={post.slug}
               className="card-gradient hover-lift border-border/50 cursor-pointer"
-              onClick={() => handlePostClick(post.slug)}
+              onClick={() => handlePostClick(post.slug, post.filePath)}
             >
               <CardHeader>
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
@@ -194,7 +242,11 @@ const PostsSection = () => {
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center gap-1">
                       <Calendar className="h-4 w-4" />
-                      {new Date(post.date).toLocaleDateString()}
+                      {new Date(post.date).toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "long",
+                        day: "numeric",
+                      })}
                     </div>
                     <div className="flex items-center gap-1">
                       <Clock className="h-4 w-4" />
@@ -207,7 +259,7 @@ const PostsSection = () => {
                 <p className="text-muted-foreground leading-relaxed">
                   {post.summary}
                 </p>
-                
+
                 <div className="flex flex-wrap gap-2">
                   {post.tags.map((tag) => (
                     <Badge key={tag} variant="secondary" className="text-xs">
@@ -215,7 +267,7 @@ const PostsSection = () => {
                     </Badge>
                   ))}
                 </div>
-                
+
                 <div className="flex justify-between items-center pt-2">
                   <Button variant="ghost" size="sm" className="group">
                     Read More
@@ -227,18 +279,18 @@ const PostsSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <Button variant="outline" size="lg" asChild>
-            <a 
-              href="https://github.com/trinathanantham/posts" 
-              target="_blank" 
+            <a
+              href="https://github.com/trinathanantham/posts"
+              target="_blank"
               rel="noopener noreferrer"
             >
               View All Posts on GitHub
               <ExternalLink className="ml-2 h-4 w-4" />
             </a>
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );
