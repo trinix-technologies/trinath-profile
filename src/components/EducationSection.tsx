@@ -1,36 +1,38 @@
-import { GraduationCap, Award } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { GraduationCap, Award } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const EducationSection = () => {
   const education = [
     {
-      degree: "Bachelor of Technology in Electronics and Communication Engineering (ECE)",
+      degree:
+        "Bachelor of Technology in Electronics and Communication Engineering (ECE)",
       institution: "Jawaharlal Nehru Technological University, Kakinada",
       year: "2009-2013",
-      description: "Graduated with 76%. Strong foundation in engineering principles, mathematics, and computer science fundamentals.",
-      type: "degree"
-    }
+      description:
+        "Graduated with 76%. Strong foundation in engineering principles, mathematics, and computer science fundamentals.",
+      type: "degree",
+    },
   ];
 
   const certifications = [
     {
-      title: "Oracle Certified Java Programmer (Java SE 7)",
+      title: "Certified Java Programmer (Java SE 7)",
       issuer: "Oracle",
-      year: "2023",
-      type: "certification"
+      year: "2014",
+      type: "certification",
     },
     {
       title: "MongoDB for Developers",
       issuer: "MongoDB University",
-      year: "2022", 
-      type: "certification"
+      year: "2017",
+      type: "certification",
     },
     {
       title: "Oracle Database SQL Certified Expert",
       issuer: "Oracle",
-      year: "2021",
-      type: "certification"
-    }
+      year: "2015",
+      type: "certification",
+    },
   ];
 
   const workExperience = [
@@ -38,30 +40,49 @@ const EducationSection = () => {
       title: "Engineering Manager",
       company: "SaasLabs",
       period: "2022 - Present",
-      description: "Managing engineering teams owning Billing, Balance, and Subscriber services. Leading 10+ engineers in full-stack delivery with React, Remix, and Node.js on GCP with Kubernetes.",
-      achievements: ["Oversaw full-stack delivery across multiple services", "Deployed services on GCP with Kubernetes and Docker", "Implemented monitoring via New Relic, Grafana, and BigQuery"]
+      description:
+        "Managing engineering teams owning Billing, Balance, and Subscriber services. Leading 10+ engineers in full-stack delivery with React, Remix, and Node.js on GCP with Kubernetes.",
+      achievements: [
+        "Oversaw full-stack delivery across multiple services",
+        "Deployed services on GCP with Kubernetes and Docker",
+        "Implemented monitoring via New Relic, Grafana, and BigQuery",
+      ],
     },
     {
       title: "Founder & Architect",
       company: "OneCompiler",
       period: "2019 - 2022",
-      description: "Architected and developed an end-to-end online IDE platform using React, Next.js, React Native, Node.js, MongoDB, and Docker on AWS and Linux.",
-      achievements: ["Scaled platform to support 2 million+ users globally", "Implemented real-time code execution and sandboxing", "Designed core product functionality from concept to launch"]
+      description:
+        "Architected and developed an end-to-end online IDE platform using React, Next.js, React Native, Node.js, MongoDB, and Docker on AWS and Linux.",
+      achievements: [
+        "Scaled platform to support 2 million+ users globally",
+        "Implemented real-time code execution and sandboxing",
+        "Designed core product functionality from concept to launch",
+      ],
     },
     {
-      title: "Lead Engineer | Engineering Manager",
+      title: "Engineering Manager | Lead Engineer | Senior Software Engineer",
       company: "Reputation.com",
       period: "2017 - 2022",
-      description: "Developed scalable microservices using Java, Spring Boot, and MongoDB for third-party API integrations. Built admin tools using React.",
-      achievements: ["Managed log aggregation and monitoring with ELK Stack", "Deployed services on AWS and GCP", "Enhanced partner onboarding and monitoring workflows"]
+      description:
+        "Developed scalable microservices using Java, Spring Boot, and MongoDB for third-party API integrations. Built admin tools using React.",
+      achievements: [
+        "Managed log aggregation and monitoring with ELK Stack",
+        "Deployed services on AWS and GCP",
+        "Enhanced partner onboarding and monitoring workflows",
+      ],
     },
     {
       title: "Software Engineer",
       company: "SplashBI",
       period: "2014 - 2017",
-      description: "Developed enterprise reporting UI using React and Kendo UI components. Built and maintained backend services with Java, Spring Boot, Hibernate, and Oracle DB.",
-      achievements: ["Delivered enterprise reporting solutions", "Worked with Oracle Database and OAF framework"]
-    }
+      description:
+        "Developed enterprise reporting UI using React and Kendo UI components. Built and maintained backend services with Java, Spring Boot, Hibernate, and Oracle DB.",
+      achievements: [
+        "Delivered enterprise reporting solutions",
+        "Worked with Oracle Database and OAF framework",
+      ],
+    },
   ];
 
   return (
@@ -72,8 +93,9 @@ const EducationSection = () => {
             Experience & Education
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            11+ years of versatile engineering leadership experience across backend, frontend, 
-            and cloud-based SaaS platforms. Skilled in building scalable systems and leading teams.
+            11+ years of versatile engineering leadership experience across
+            backend, frontend, and cloud-based SaaS platforms. Skilled in
+            building scalable systems and leading teams.
           </p>
         </div>
 
@@ -88,18 +110,27 @@ const EducationSection = () => {
             </div>
             <div className="space-y-6">
               {workExperience.map((work, index) => (
-                <Card key={index} className="card-gradient hover-lift border-border/50">
+                <Card
+                  key={index}
+                  className="card-gradient hover-lift border-border/50"
+                >
                   <CardHeader>
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
                       <div>
                         <CardTitle className="text-xl">{work.title}</CardTitle>
-                        <p className="text-lg font-medium text-primary">{work.company}</p>
+                        <p className="text-lg font-medium text-primary">
+                          {work.company}
+                        </p>
                       </div>
-                      <span className="text-muted-foreground font-medium">{work.period}</span>
+                      <span className="text-muted-foreground font-medium">
+                        {work.period}
+                      </span>
                     </div>
                   </CardHeader>
                   <CardContent className="space-y-4">
-                    <p className="text-muted-foreground leading-relaxed">{work.description}</p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {work.description}
+                    </p>
                     <div className="space-y-2">
                       <h4 className="font-medium text-sm">Key Achievements:</h4>
                       <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
@@ -124,7 +155,10 @@ const EducationSection = () => {
             </div>
             <div className="grid gap-6">
               {education.map((edu, index) => (
-                <Card key={index} className="card-gradient hover-lift border-border/50">
+                <Card
+                  key={index}
+                  className="card-gradient hover-lift border-border/50"
+                >
                   <CardHeader>
                     <CardTitle className="text-xl">{edu.degree}</CardTitle>
                     <div className="flex flex-col sm:flex-row sm:justify-between text-muted-foreground">
@@ -148,7 +182,10 @@ const EducationSection = () => {
             </div>
             <div className="grid md:grid-cols-2 gap-6">
               {certifications.map((cert, index) => (
-                <Card key={index} className="card-gradient hover-lift border-border/50">
+                <Card
+                  key={index}
+                  className="card-gradient hover-lift border-border/50"
+                >
                   <CardHeader>
                     <CardTitle className="text-lg">{cert.title}</CardTitle>
                     <div className="flex justify-between text-muted-foreground text-sm">
