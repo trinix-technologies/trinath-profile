@@ -25,7 +25,7 @@ const HeroSection = () => {
               Trinath Anantham
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8">
-              Engineering Manager | System Architect | Founder - OneCompiler
+              Engineering Manager | System Architect | Ex co-founder - OneCompiler
             </p>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Versatile Engineering Leader with 11+ years of experience across

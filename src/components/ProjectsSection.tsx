@@ -41,7 +41,7 @@ const ProjectsSection = () => {
     {
       title: "One Compiler",
       description:
-        "Founded and architected an online IDE platform supporting 60+ programming languages with real-time code execution and sandboxing. Scaled to serve 2 million+ users globally with high availability and performance.",
+        "Co-founded and architected an online IDE platform supporting 60+ programming languages with real-time code execution and sandboxing. Scaled to serve 2 million+ users globally with high availability and performance.",
       techStack: [
         "React",
         "Next.js",

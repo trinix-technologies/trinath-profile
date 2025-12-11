@@ -49,7 +49,7 @@ const EducationSection = () => {
       ],
     },
     {
-      title: "Founder & Architect",
+      title: "Ex co-founder & Architect",
       company: "OneCompiler",
       period: "2019 - 2022",
       description:
