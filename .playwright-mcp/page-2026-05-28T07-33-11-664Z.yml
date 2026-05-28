@@ -1,0 +1,997 @@
+- generic [ref=e2]:
+  - region "Notifications (F8)":
+    - list
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e6]:
+        - button "TA Trinath Anantham" [ref=e7] [cursor=pointer]:
+          - generic [ref=e8]: TA
+          - generic [ref=e9]: Trinath Anantham
+        - generic [ref=e10]:
+          - button "Home" [ref=e11] [cursor=pointer]
+          - button "Projects" [ref=e12] [cursor=pointer]
+          - button "Stack" [ref=e13] [cursor=pointer]
+          - button "Experience" [ref=e14] [cursor=pointer]
+          - button "Writing" [ref=e15] [cursor=pointer]
+          - button "Contact" [ref=e16] [cursor=pointer]
+        - generic [ref=e17]:
+          - button "Toggle theme" [ref=e18] [cursor=pointer]:
+            - img [ref=e19]
+          - button "Hire Me" [ref=e25] [cursor=pointer]
+    - main [ref=e26]:
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]:
+            - generic [ref=e30]:
+              - generic [ref=e31]: Open to advisory & senior leadership roles
+              - generic [ref=e35]:
+                - paragraph [ref=e36]: Hi, I'm
+                - heading "Trinath Anantham" [level=1] [ref=e37]
+                - paragraph [ref=e38]: Engineering Manager · System Architect
+                - paragraph [ref=e39]: Ex co-founder, OneCompiler
+              - paragraph [ref=e40]: I build scalable platforms, ship developer tools, and lead full-stack teams across SaaS, fintech, and AI.
+              - generic [ref=e41]:
+                - generic [ref=e42]:
+                  - img [ref=e43]
+                  - text: Hyderabad, India
+                - generic [ref=e48]: IST · UTC+5:30
+                - generic [ref=e49]: Currently @ Go High Level Experts
+              - generic [ref=e51]:
+                - button "Explore Work" [ref=e52] [cursor=pointer]:
+                  - text: Explore Work
+                  - img
+                - link "Resume" [ref=e53] [cursor=pointer]:
+                  - /url: /Trinath.pdf
+                  - img
+                  - text: Resume
+                - button "Get in touch" [ref=e54] [cursor=pointer]
+              - generic [ref=e55]:
+                - link "GitHub" [ref=e56] [cursor=pointer]:
+                  - /url: https://github.com/trinathanantham
+                  - img [ref=e57]
+                - link "LinkedIn" [ref=e60] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/trinath-anantham-045a19112/
+                  - img [ref=e61]
+                - link "Email" [ref=e65] [cursor=pointer]:
+                  - /url: mailto:trinath.anantham@gmail.com
+                  - img [ref=e66]
+            - generic [ref=e69]:
+              - generic [ref=e70]:
+                - img "Trinath Anantham" [ref=e73]
+                - generic [ref=e74]: Available for opportunities
+              - generic [ref=e76]:
+                - generic [ref=e77]:
+                  - img [ref=e78]
+                  - generic [ref=e80]: Highlights
+                - list [ref=e81]:
+                  - listitem [ref=e842]:
+                    - generic [ref=e844]: Currently leading Workflows, AI & Importer teams at Go High Level Experts
+                  - listitem [ref=e82]:
+                    - generic [ref=e84]: Co-founded OneCompiler — online IDE scaled to 2M+ users
+                  - listitem [ref=e845]:
+                    - generic [ref=e847]: Sr. Engineering Manager at SaaS Labs — Billing, Balance & Subscriber services
+                  - listitem [ref=e848]:
+                    - generic [ref=e850]: 6 years at Reputation.com — grew from Senior Engineer to Engineering Manager
+                  - listitem [ref=e88]:
+                    - generic [ref=e90]: Architected microservices on AWS & GCP with Kubernetes
+                  - listitem [ref=e91]:
+                    - generic [ref=e93]: Built AI agentic workflows with LangChain & OpenAI
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - generic [ref=e96]: 11+
+              - paragraph [ref=e97]: Years Experience
+            - generic [ref=e98]:
+              - generic [ref=e99]: 2M+
+              - paragraph [ref=e100]: Users Impacted
+            - generic [ref=e101]:
+              - generic [ref=e102]: 10+
+              - paragraph [ref=e103]: Engineers Led
+            - generic [ref=e104]:
+              - generic [ref=e105]: 20+
+              - paragraph [ref=e106]: Projects Shipped
+        - generic [ref=e108]:
+          - generic [ref=e109]: Engineering Leadership◆
+          - generic [ref=e110]: System Design◆
+          - generic [ref=e111]: Distributed Systems◆
+          - generic [ref=e112]: Developer Tools◆
+          - generic [ref=e113]: AI Agents◆
+          - generic [ref=e114]: Multi-Tenant SaaS◆
+          - generic [ref=e115]: Cloud Native◆
+          - generic [ref=e116]: Mentoring◆
+          - generic [ref=e117]: Engineering Leadership◆
+          - generic [ref=e118]: System Design◆
+          - generic [ref=e119]: Distributed Systems◆
+          - generic [ref=e120]: Developer Tools◆
+          - generic [ref=e121]: AI Agents◆
+          - generic [ref=e122]: Multi-Tenant SaaS◆
+          - generic [ref=e123]: Cloud Native◆
+          - generic [ref=e124]: Mentoring◆
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - paragraph [ref=e128]: Selected Work
+          - heading "Projects & Platforms" [level=2] [ref=e129]
+          - paragraph [ref=e130]: Scalable systems, developer tools, and platforms I've architected and shipped across SaaS, fintech, and analytics.
+        - generic [ref=e131]:
+          - button "All" [ref=e132] [cursor=pointer]
+          - button "Featured" [ref=e133] [cursor=pointer]
+          - button "AI" [ref=e1650] [cursor=pointer]
+          - button "React" [ref=e134] [cursor=pointer]
+          - button "Vue.js" [ref=e1651] [cursor=pointer]
+          - button "Node.js" [ref=e135] [cursor=pointer]
+          - button "Java" [ref=e136] [cursor=pointer]
+          - button "Spring Boot" [ref=e137] [cursor=pointer]
+          - button "MongoDB" [ref=e138] [cursor=pointer]
+          - button "AWS" [ref=e139] [cursor=pointer]
+          - button "GCP" [ref=e140] [cursor=pointer]
+          - button "Stripe" [ref=e141] [cursor=pointer]
+        - generic [ref=e142]:
+          - article [ref=e1652]:
+            - generic [ref=e1653]:
+              - img [ref=e1654]
+              - text: Featured
+            - generic [ref=e1656]:
+              - generic [ref=e1658]:
+                - heading "AI Builder — Agentic Workflows" [level=3] [ref=e1659]
+                - generic [ref=e1660]:
+                  - button "Go High Level Experts" [ref=e1661] [cursor=pointer]:
+                    - img [ref=e1662]
+                    - text: Go High Level Experts
+                  - generic [ref=e1665]: "2025"
+              - paragraph [ref=e1666]: Leading the AI Builder team. Building complex workflows powered by AI agents, chat agents, intent detection, multi-step reasoning, RAG, GraphRAG, and VectorDB-backed retrieval. Enabling no-code AI automation for 1M+ HighLevel users with tool-calling, memory, and guardrails.
+              - generic [ref=e1667]:
+                - generic [ref=e1668]: Node.js
+                - generic [ref=e1669]: NestJS
+                - generic [ref=e1670]: Vue.js
+                - generic [ref=e1671]: OpenAI
+                - generic [ref=e1672]: LangChain
+                - generic [ref=e1673]: RAG
+                - generic [ref=e1674]: GraphRAG
+                - generic [ref=e1675]: VectorDB
+                - generic [ref=e1676]: MongoDB
+          - article [ref=e1678]:
+            - generic [ref=e1679]:
+              - img [ref=e1680]
+              - text: Featured
+            - generic [ref=e1682]:
+              - generic [ref=e1684]:
+                - heading "Workflows IATF — Integrations Platform" [level=3] [ref=e1685]
+                - generic [ref=e1686]:
+                  - button "Go High Level Experts" [ref=e1687] [cursor=pointer]:
+                    - img [ref=e1688]
+                    - text: Go High Level Experts
+                  - generic [ref=e1691]: "2025"
+              - paragraph [ref=e1692]: Leading the IATF (Integrations Actions/Triggers Framework) team. Built an internal portal to ship 100+ integration apps with 3rd-party actions and triggers across CRM, marketing, payments, and productivity tools. Unified schema, OAuth flows, retries, and observability.
+              - generic [ref=e1693]:
+                - generic [ref=e1694]: Node.js
+                - generic [ref=e1695]: NestJS
+                - generic [ref=e1696]: Vue.js
+                - generic [ref=e1697]: MongoDB
+                - generic [ref=e1698]: OAuth
+                - generic [ref=e1699]: Webhooks
+                - generic [ref=e1700]: TypeScript
+          - article [ref=e1702]:
+            - generic [ref=e1703]:
+              - generic [ref=e1705]:
+                - heading "Importer — External System Sync" [level=3] [ref=e1706]
+                - generic [ref=e1707]:
+                  - button "Go High Level Experts" [ref=e1708] [cursor=pointer]:
+                    - img [ref=e1709]
+                    - text: Go High Level Experts
+                  - generic [ref=e1712]: "2025"
+              - paragraph [ref=e1713]: Leading the Importer team. Scalable data import pipelines from HubSpot, Make.com, and other external CRM/automation platforms into HighLevel. Schema mapping, deduplication, resumable jobs, and zero-downtime onboarding for enterprise customers.
+              - generic [ref=e1714]:
+                - generic [ref=e1715]: Node.js
+                - generic [ref=e1716]: NestJS
+                - generic [ref=e1717]: Vue.js
+                - generic [ref=e1718]: MongoDB
+                - generic [ref=e1719]: Queues
+                - generic [ref=e1720]: HubSpot API
+                - generic [ref=e1721]: Make.com
+          - article [ref=e143]:
+            - generic [ref=e144]:
+              - img [ref=e145]
+              - text: Featured
+            - generic [ref=e147]:
+              - generic [ref=e148]:
+                - generic [ref=e149]:
+                  - heading "OneCompiler" [level=3] [ref=e150]
+                  - generic [ref=e1500]:
+                    - button "OneCompiler" [ref=e1501] [cursor=pointer]:
+                      - img [ref=e1502]
+                      - text: OneCompiler
+                    - generic [ref=e1505]: Nov 2019
+                - link "Open OneCompiler" [ref=e152] [cursor=pointer]:
+                  - /url: https://onecompiler.com
+                  - img [ref=e153]
+              - paragraph [ref=e156]: Co-founded and architected an online IDE platform supporting 60+ programming languages with real-time code execution and sandboxing. Scaled to serve 2 million+ users globally.
+              - generic [ref=e157]:
+                - generic [ref=e158]: React
+                - generic [ref=e159]: Next.js
+                - generic [ref=e160]: Node.js
+                - generic [ref=e161]: MongoDB
+                - generic [ref=e162]: Docker
+                - generic [ref=e163]: AWS
+              - generic [ref=e164]:
+                - link "Code" [ref=e165] [cursor=pointer]:
+                  - /url: https://github.com/onecompiler
+                  - img [ref=e166]
+                  - text: Code
+                - link "Live Demo" [ref=e169] [cursor=pointer]:
+                  - /url: https://onecompiler.com
+                  - img [ref=e170]
+                  - text: Live Demo
+          - article [ref=e174]:
+            - generic [ref=e175]:
+              - img [ref=e176]
+              - text: Featured
+            - generic [ref=e178]:
+              - generic [ref=e179]:
+                - generic [ref=e180]:
+                  - heading "OneCompiler Mobile" [level=3] [ref=e181]
+                  - generic [ref=e1506]:
+                    - button "OneCompiler" [ref=e1507] [cursor=pointer]:
+                      - img [ref=e1508]
+                      - text: OneCompiler
+                    - generic [ref=e1511]: "2020"
+                - link "Open OneCompiler Mobile" [ref=e183] [cursor=pointer]:
+                  - /url: https://play.google.com/store/apps/details?id=com.onecompiler&hl=en_IN&pli=1
+                  - img [ref=e184]
+              - paragraph [ref=e187]: Launched the OneCompiler mobile app using Flutter and Dart. Same powerful IDE features as the web platform, optimized for mobile with touch-friendly UI and offline capabilities.
+              - generic [ref=e188]:
+                - generic [ref=e189]: Flutter
+                - generic [ref=e190]: Dart
+                - generic [ref=e191]: Android
+                - generic [ref=e192]: iOS
+              - link "Live Demo" [ref=e194] [cursor=pointer]:
+                - /url: https://play.google.com/store/apps/details?id=com.onecompiler&hl=en_IN&pli=1
+                - img [ref=e195]
+                - text: Live Demo
+          - article [ref=e199]:
+            - generic [ref=e200]:
+              - img [ref=e201]
+              - text: Featured
+            - generic [ref=e203]:
+              - generic [ref=e205]:
+                - heading "Billing Service" [level=3] [ref=e206]
+                - generic [ref=e1512]:
+                  - button "SaaS Labs" [ref=e1513] [cursor=pointer]:
+                    - img [ref=e1514]
+                    - text: SaaS Labs
+                  - generic [ref=e1517]: "2023"
+              - paragraph [ref=e208]: Built and led the development of an automated billing service from scratch. Stripe integration, NestJS backend, React/Remix frontend, MySQL, BigQuery analytics, Grafana monitoring.
+              - generic [ref=e209]:
+                - generic [ref=e210]: NestJS
+                - generic [ref=e211]: MySQL
+                - generic [ref=e212]: Remix
+                - generic [ref=e213]: Stripe
+                - generic [ref=e214]: BigQuery
+                - generic [ref=e215]: GCP
+                - generic [ref=e216]: Kubernetes
+          - article [ref=e218]:
+            - generic [ref=e219]:
+              - generic [ref=e221]:
+                - heading "Balance Service" [level=3] [ref=e222]
+                - generic [ref=e1518]:
+                  - button "SaaS Labs" [ref=e1519] [cursor=pointer]:
+                    - img [ref=e1520]
+                    - text: SaaS Labs
+                  - generic [ref=e1523]: "2023"
+              - paragraph [ref=e224]: Architected a balance service for deducting calls, SMS, transactions, and other services. Stripe integration, real-time analytics via BigQuery, Grafana dashboards.
+              - generic [ref=e225]:
+                - generic [ref=e226]: NestJS
+                - generic [ref=e227]: MySQL
+                - generic [ref=e228]: Remix
+                - generic [ref=e229]: Stripe
+                - generic [ref=e230]: BigQuery
+                - generic [ref=e231]: GCP
+          - article [ref=e233]:
+            - generic [ref=e234]:
+              - generic [ref=e236]:
+                - heading "Integration Service" [level=3] [ref=e237]
+                - generic [ref=e1524]:
+                  - button "Reputation.com" [ref=e1525] [cursor=pointer]:
+                    - img [ref=e1526]
+                    - text: Reputation.com
+                  - generic [ref=e1529]: "2018"
+              - paragraph [ref=e239]: Built customer integration services using scalable microservices for third-party API integrations. ELK Stack log aggregation across AWS and GCP.
+              - generic [ref=e240]:
+                - generic [ref=e241]: Java
+                - generic [ref=e242]: Spring Boot
+                - generic [ref=e243]: MongoDB
+                - generic [ref=e244]: React
+                - generic [ref=e245]: ELK
+                - generic [ref=e246]: AWS
+          - article [ref=e248]:
+            - generic [ref=e249]:
+              - generic [ref=e251]:
+                - heading "Business Listing Scraper" [level=3] [ref=e252]
+                - generic [ref=e1530]:
+                  - button "Reputation.com" [ref=e1531] [cursor=pointer]:
+                    - img [ref=e1532]
+                    - text: Reputation.com
+                  - generic [ref=e1535]: "2019"
+              - paragraph [ref=e254]: Automated business listing scraper handling millions of scraping jobs at scale across AWS and GCP with comprehensive monitoring.
+              - generic [ref=e255]:
+                - generic [ref=e256]: Java
+                - generic [ref=e257]: Spring Boot
+                - generic [ref=e258]: MongoDB
+                - generic [ref=e259]: AWS
+                - generic [ref=e260]: GCP
+          - article [ref=e262]:
+            - generic [ref=e263]:
+              - generic [ref=e265]:
+                - heading "Reporting Dashboards" [level=3] [ref=e266]
+                - generic [ref=e1536]:
+                  - button "SplashBI" [ref=e1537] [cursor=pointer]:
+                    - img [ref=e1538]
+                    - text: SplashBI
+                  - generic [ref=e1541]: "2016"
+              - paragraph [ref=e268]: Enterprise reporting dashboards built with React + Kendo UI. Interactive data visualization, real-time reporting, custom charts.
+              - generic [ref=e269]:
+                - generic [ref=e270]: React
+                - generic [ref=e271]: Kendo UI
+                - generic [ref=e272]: Java
+                - generic [ref=e273]: Spring Boot
+                - generic [ref=e274]: Oracle
+          - article [ref=e276]:
+            - generic [ref=e277]:
+              - generic [ref=e279]:
+                - heading "Reporting Engine" [level=3] [ref=e280]
+                - generic [ref=e1542]:
+                  - button "SplashBI" [ref=e1543] [cursor=pointer]:
+                    - img [ref=e1544]
+                    - text: SplashBI
+                  - generic [ref=e1547]: "2015"
+              - paragraph [ref=e282]: Comprehensive reporting engine to build any reporting query easily. Java + Spring Boot + Hibernate + Oracle DB with OAF framework.
+              - generic [ref=e283]:
+                - generic [ref=e284]: React
+                - generic [ref=e285]: Kendo UI
+                - generic [ref=e286]: Java
+                - generic [ref=e287]: Hibernate
+                - generic [ref=e288]: Oracle
+          - article [ref=e290]:
+            - generic [ref=e291]:
+              - generic [ref=e293]:
+                - heading "Enterprise BI Solutions" [level=3] [ref=e294]
+                - generic [ref=e1548]:
+                  - button "EIS Technologies" [ref=e1549] [cursor=pointer]:
+                    - img [ref=e1550]
+                    - text: EIS Technologies
+                  - generic [ref=e1553]: "2014"
+              - paragraph [ref=e296]: Enterprise analytics and reporting solutions using Oracle BI Publisher and OBIEE. Data modeling, performance tuning, and Oracle EBS reporting.
+              - generic [ref=e297]:
+                - generic [ref=e298]: Oracle EBS
+                - generic [ref=e299]: OBIEE
+                - generic [ref=e300]: BI Publisher
+                - generic [ref=e301]: PL/SQL
+                - generic [ref=e302]: ODI
+      - generic [ref=e305]:
+        - generic [ref=e306]:
+          - paragraph [ref=e307]: The Toolbox
+          - heading "Technical Expertise" [level=2] [ref=e308]
+          - paragraph [ref=e309]: 11+ years across backend, frontend, cloud, and AI. Specialized in scalable systems and engineering leadership.
+        - generic [ref=e310]:
+          - generic [ref=e313]:
+            - generic [ref=e314]:
+              - img [ref=e316]
+              - heading "Backend" [level=3] [ref=e319]
+            - list [ref=e320]:
+              - listitem [ref=e321]: Java
+              - listitem [ref=e322]: Spring Boot
+              - listitem [ref=e323]: Node.js
+              - listitem [ref=e324]: NestJS
+              - listitem [ref=e325]: Express.js
+              - listitem [ref=e326]: GraphQL
+              - listitem [ref=e327]: REST APIs
+              - listitem [ref=e328]: Groovy
+          - generic [ref=e331]:
+            - generic [ref=e332]:
+              - img [ref=e334]
+              - heading "Frontend" [level=3] [ref=e338]
+            - list [ref=e339]:
+              - listitem [ref=e340]: React
+              - listitem [ref=e341]: Next.js
+              - listitem [ref=e1723]: Vue.js
+              - listitem [ref=e342]: Remix
+              - listitem [ref=e343]: Redux
+              - listitem [ref=e344]: Tailwind CSS
+              - listitem [ref=e345]: React Native
+              - listitem [ref=e347]: Electron
+          - generic [ref=e350]:
+            - generic [ref=e351]:
+              - img [ref=e353]
+              - heading "Databases" [level=3] [ref=e357]
+            - list [ref=e358]:
+              - listitem [ref=e359]: MongoDB
+              - listitem [ref=e360]: PostgreSQL
+              - listitem [ref=e361]: MySQL
+              - listitem [ref=e362]: Oracle
+              - listitem [ref=e363]: Redis
+              - listitem [ref=e364]: BigQuery
+              - listitem [ref=e365]: RabbitMQ
+              - listitem [ref=e366]: Pub/Sub
+          - generic [ref=e369]:
+            - generic [ref=e370]:
+              - img [ref=e372]
+              - heading "Cloud & DevOps" [level=3] [ref=e374]
+            - list [ref=e375]:
+              - listitem [ref=e376]: AWS
+              - listitem [ref=e377]: GCP
+              - listitem [ref=e378]: Docker
+              - listitem [ref=e379]: Kubernetes
+              - listitem [ref=e380]: Jenkins
+              - listitem [ref=e381]: GitHub Actions
+              - listitem [ref=e382]: Terraform
+              - listitem [ref=e383]: PM2
+          - generic [ref=e386]:
+            - generic [ref=e387]:
+              - img [ref=e389]
+              - heading "AI & Agents" [level=3] [ref=e400]
+            - list [ref=e401]:
+              - listitem [ref=e402]: LangChain
+              - listitem [ref=e403]: Mastra
+              - listitem [ref=e404]: OpenAI
+              - listitem [ref=e405]: Prompt Engineering
+              - listitem [ref=e1724]: AI Agents
+              - listitem [ref=e1725]: Chat Agents
+              - listitem [ref=e1726]: Intent Detection
+              - listitem [ref=e407]: RAG
+              - listitem [ref=e1727]: GraphRAG
+              - listitem [ref=e1728]: VectorDB
+          - generic [ref=e410]:
+            - generic [ref=e411]:
+              - img [ref=e413]
+              - heading "Architecture" [level=3] [ref=e415]
+            - list [ref=e416]:
+              - listitem [ref=e417]: System Design
+              - listitem [ref=e418]: Microservices
+              - listitem [ref=e419]: Event-Driven
+              - listitem [ref=e420]: Multi-Tenancy
+              - listitem [ref=e421]: Performance Tuning
+              - listitem [ref=e422]: Scalability
+          - generic [ref=e425]:
+            - generic [ref=e426]:
+              - img [ref=e428]
+              - heading "Observability" [level=3] [ref=e430]
+            - list [ref=e431]:
+              - listitem [ref=e432]: ELK Stack
+              - listitem [ref=e433]: Prometheus
+              - listitem [ref=e434]: Grafana
+              - listitem [ref=e435]: New Relic
+              - listitem [ref=e436]: BigQuery
+              - listitem [ref=e437]: Postman
+              - listitem [ref=e438]: Swagger
+          - generic [ref=e441]:
+            - generic [ref=e442]:
+              - img [ref=e444]
+              - heading "Leadership" [level=3] [ref=e455]
+            - list [ref=e456]:
+              - listitem [ref=e457]: Agile · Scrum
+              - listitem [ref=e458]: OKRs
+              - listitem [ref=e459]: Hiring
+              - listitem [ref=e460]: Mentoring
+              - listitem [ref=e461]: Code Reviews
+              - listitem [ref=e462]: TDD
+      - generic [ref=e464]:
+        - generic [ref=e465]:
+          - paragraph [ref=e466]: The Journey
+          - heading "Experience & Education" [level=2] [ref=e467]
+          - paragraph [ref=e468]: 11+ years building scalable systems and leading high-performing engineering teams.
+        - generic [ref=e469]:
+          - generic [ref=e470]:
+            - img [ref=e471]
+            - heading "Work Experience" [level=3] [ref=e474]
+          - list [ref=e476]:
+            - listitem [ref=e1089]:
+              - img "Go High Level Experts logo" [ref=e1439]
+              - generic [ref=e1091]:
+                - generic [ref=e1092]:
+                  - generic [ref=e1093]:
+                    - heading "Go High Level Experts Now" [level=4] [ref=e1094]:
+                      - text: Go High Level Experts
+                      - generic [ref=e1095]: Now
+                    - paragraph [ref=e1096]:
+                      - generic [ref=e1097]:
+                        - img [ref=e1098]
+                        - text: India · Remote
+                      - generic [ref=e1101]: ·
+                      - generic [ref=e1102]: 1 role
+                  - generic [ref=e1103]:
+                    - paragraph [ref=e1104]: Oct 2025 — Present
+                    - paragraph [ref=e1105]: 8 mos
+                - list [ref=e1106]:
+                  - listitem [ref=e1107]:
+                    - generic [ref=e1110]:
+                      - heading "Engineering Manager" [level=5] [ref=e1111]
+                      - generic [ref=e1112]: Oct 2025 — Present
+                    - paragraph [ref=e1113]: Leading the Workflows Automations Extended Team, Workflows AI Team, and Importer Team. Driving roadmap execution, delivery quality, and AI-driven automation enhancements.
+                    - list [ref=e1114]:
+                      - listitem [ref=e1115]:
+                        - img [ref=e1116]
+                        - generic [ref=e1119]: "Leading 3 teams: Workflow Automations, Workflows AI, and Importer"
+                      - listitem [ref=e1120]:
+                        - img [ref=e1121]
+                        - generic [ref=e1124]: Owning AI-driven enhancements that boost automation intelligence and UX
+                      - listitem [ref=e1125]:
+                        - img [ref=e1126]
+                        - generic [ref=e1129]: Managing scalable data import pipelines and customer onboarding flows
+                      - listitem [ref=e1130]:
+                        - img [ref=e1131]
+                        - generic [ref=e1134]: Contributing to hiring, architecture decisions, and long-term product direction
+                    - generic [ref=e1135]:
+                      - generic [ref=e1136]: NestJS
+                      - generic [ref=e1138]: Node.js
+                      - generic [ref=e1729]: Vue.js
+                      - generic [ref=e1137]: MongoDB
+                      - generic [ref=e1139]: AI Agents
+                      - generic [ref=e1730]: LangChain
+                      - generic [ref=e1731]: RAG
+                      - generic [ref=e1140]: TypeScript
+                - generic [ref=e1732]:
+                  - paragraph [ref=e1733]: Related Work
+                  - generic [ref=e1734]:
+                    - button "AI Builder — Agentic Workflows" [ref=e1735] [cursor=pointer]:
+                      - text: AI Builder — Agentic Workflows
+                      - img [ref=e1736]
+                    - button "Workflows IATF — Integrations Platform" [ref=e1739] [cursor=pointer]:
+                      - text: Workflows IATF — Integrations Platform
+                      - img [ref=e1740]
+                    - button "Importer — External System Sync" [ref=e1743] [cursor=pointer]:
+                      - text: Importer — External System Sync
+                      - img [ref=e1744]
+            - listitem [ref=e1141]:
+              - img "SaaS Labs logo" [ref=e1441]
+              - generic [ref=e1143]:
+                - generic [ref=e1144]:
+                  - generic [ref=e1145]:
+                    - heading "SaaS Labs" [level=4] [ref=e1146]
+                    - paragraph [ref=e1147]:
+                      - generic [ref=e1148]:
+                        - img [ref=e1149]
+                        - text: Hyderabad, India · Remote
+                      - generic [ref=e1152]: ·
+                      - generic [ref=e1153]: 2 roles
+                  - generic [ref=e1154]:
+                    - paragraph [ref=e1155]: Apr 2023 — Oct 2025
+                    - paragraph [ref=e1156]: 2 yrs 7 mos
+                - list [ref=e1157]:
+                  - listitem [ref=e1158]:
+                    - generic [ref=e1161]:
+                      - heading "Senior Engineering Manager" [level=5] [ref=e1162]
+                      - generic [ref=e1163]: Apr 2025 — Oct 2025
+                    - paragraph [ref=e1164]: Promoted to Senior EM. Expanded ownership across Billing, Balance, and Subscriber services. Drove organizational scaling, cross-team alignment, and hiring strategy.
+                    - list [ref=e1165]:
+                      - listitem [ref=e1166]:
+                        - img [ref=e1167]
+                        - generic [ref=e1170]: Led senior engineering decisions across multiple product lines
+                      - listitem [ref=e1171]:
+                        - img [ref=e1172]
+                        - generic [ref=e1175]: Mentored Engineering Managers and tech leads
+                      - listitem [ref=e1176]:
+                        - img [ref=e1177]
+                        - generic [ref=e1180]: Drove cross-functional initiatives across Billing & Balance domains
+                    - generic [ref=e1181]:
+                      - generic [ref=e1182]: NestJS
+                      - generic [ref=e1183]: Remix
+                      - generic [ref=e1184]: React
+                      - generic [ref=e1185]: GCP
+                      - generic [ref=e1186]: Kubernetes
+                      - generic [ref=e1187]: BigQuery
+                  - listitem [ref=e1189]:
+                    - generic [ref=e1192]:
+                      - heading "Engineering Manager" [level=5] [ref=e1193]
+                      - generic [ref=e1194]: Apr 2023 — Apr 2025
+                    - paragraph [ref=e1195]: Led a 12+ member Billing Engineering Team. Architected and developed Billing and Balance microservices from the ground up for scalable, high-availability SaaS products.
+                    - list [ref=e1196]:
+                      - listitem [ref=e1197]:
+                        - img [ref=e1198]
+                        - generic [ref=e1201]: Architected Billing & Balance microservices from ground up
+                      - listitem [ref=e1202]:
+                        - img [ref=e1203]
+                        - generic [ref=e1206]: Drove innovation across billing workflows, payments, and balance management
+                      - listitem [ref=e1207]:
+                        - img [ref=e1208]
+                        - generic [ref=e1211]: Active in performance reviews, hiring, and team growth
+                      - listitem [ref=e1212]:
+                        - img [ref=e1213]
+                        - generic [ref=e1216]: Deployed on GCP with Kubernetes; monitoring via New Relic, Grafana, BigQuery
+                    - generic [ref=e1217]:
+                      - generic [ref=e1218]: NestJS
+                      - generic [ref=e1219]: Remix
+                      - generic [ref=e1220]: React
+                      - generic [ref=e1221]: Stripe
+                      - generic [ref=e1222]: MySQL
+                      - generic [ref=e1223]: GCP
+                      - generic [ref=e1224]: Kubernetes
+                - generic [ref=e1554]:
+                  - paragraph [ref=e1555]: Related Work
+                  - generic [ref=e1556]:
+                    - button "Billing Service" [ref=e1557] [cursor=pointer]:
+                      - text: Billing Service
+                      - img [ref=e1558]
+                    - button "Balance Service" [ref=e1561] [cursor=pointer]:
+                      - text: Balance Service
+                      - img [ref=e1562]
+            - listitem [ref=e1225]:
+              - img "Reputation.com logo" [ref=e1443]
+              - generic [ref=e1227]:
+                - generic [ref=e1228]:
+                  - generic [ref=e1229]:
+                    - heading "Reputation.com" [level=4] [ref=e1230]
+                    - paragraph [ref=e1231]:
+                      - generic [ref=e1232]:
+                        - img [ref=e1233]
+                        - text: Hyderabad, India · Remote
+                      - generic [ref=e1236]: ·
+                      - generic [ref=e1237]: 3 roles
+                  - generic [ref=e1238]:
+                    - paragraph [ref=e1239]: Apr 2017 — Mar 2023
+                    - paragraph [ref=e1240]: 6 yrs
+                - list [ref=e1241]:
+                  - listitem [ref=e1242]:
+                    - generic [ref=e1245]:
+                      - heading "Engineering Manager" [level=5] [ref=e1246]
+                      - generic [ref=e1247]: Feb 2022 — Mar 2023
+                    - paragraph [ref=e1248]: Architected and built two microservices to integrate third-party APIs. Managed and mentored a 10-member engineering team.
+                    - list [ref=e1249]:
+                      - listitem [ref=e1250]:
+                        - img [ref=e1251]
+                        - generic [ref=e1254]: Architected 2 microservices for third-party API integrations
+                      - listitem [ref=e1255]:
+                        - img [ref=e1256]
+                        - generic [ref=e1259]: Led migration of 200+ customers to new Rep Connector with zero downtime
+                      - listitem [ref=e1260]:
+                        - img [ref=e1261]
+                        - generic [ref=e1264]: Managed and mentored 10-member engineering team
+                      - listitem [ref=e1265]:
+                        - img [ref=e1266]
+                        - generic [ref=e1269]: Drove delivery excellence, code quality, and cross-team collaboration
+                    - generic [ref=e1270]:
+                      - generic [ref=e1271]: Java
+                      - generic [ref=e1272]: Spring Boot
+                      - generic [ref=e1273]: Redis
+                      - generic [ref=e1274]: MongoDB
+                      - generic [ref=e1275]: React
+                      - generic [ref=e1276]: AWS
+                  - listitem [ref=e1278]:
+                    - generic [ref=e1281]:
+                      - heading "Development Team Lead" [level=5] [ref=e1282]
+                      - generic [ref=e1283]: Jun 2020 — Mar 2022
+                    - paragraph [ref=e1284]: Led integration team development. Built and scaled microservices for third-party API integrations across customer platforms.
+                    - list [ref=e1285]:
+                      - listitem [ref=e1286]:
+                        - img [ref=e1287]
+                        - generic [ref=e1290]: Led integration platform engineering
+                      - listitem [ref=e1291]:
+                        - img [ref=e1292]
+                        - generic [ref=e1295]: Mentored engineers and drove technical roadmap
+                      - listitem [ref=e1296]:
+                        - img [ref=e1297]
+                        - generic [ref=e1300]: Owned ELK Stack log aggregation across AWS and GCP
+                    - generic [ref=e1301]:
+                      - generic [ref=e1302]: Java
+                      - generic [ref=e1303]: Spring Boot
+                      - generic [ref=e1304]: MongoDB
+                      - generic [ref=e1305]: ELK
+                      - generic [ref=e1306]: AWS
+                      - generic [ref=e1307]: GCP
+                  - listitem [ref=e1309]:
+                    - generic [ref=e1312]:
+                      - heading "Senior Software Engineer" [level=5] [ref=e1313]
+                      - generic [ref=e1314]: Apr 2017 — Jun 2020
+                    - paragraph [ref=e1315]: Developed scalable microservices using Java, Spring Boot, and MongoDB for third-party API integrations. Built admin tools using React.
+                    - list [ref=e1316]:
+                      - listitem [ref=e1317]:
+                        - img [ref=e1318]
+                        - generic [ref=e1321]: Built scalable integration microservices for enterprise customers
+                      - listitem [ref=e1322]:
+                        - img [ref=e1323]
+                        - generic [ref=e1326]: Developed React-based admin tools and dashboards
+                      - listitem [ref=e1327]:
+                        - img [ref=e1328]
+                        - generic [ref=e1331]: Enhanced partner onboarding and monitoring workflows
+                    - generic [ref=e1332]:
+                      - generic [ref=e1333]: Java
+                      - generic [ref=e1334]: Spring Boot
+                      - generic [ref=e1335]: MongoDB
+                      - generic [ref=e1336]: React
+                      - generic [ref=e1337]: ELK
+                      - generic [ref=e1338]: AWS
+                - generic [ref=e1565]:
+                  - paragraph [ref=e1566]: Related Work
+                  - generic [ref=e1567]:
+                    - button "Integration Service" [ref=e1568] [cursor=pointer]:
+                      - text: Integration Service
+                      - img [ref=e1569]
+                    - button "Business Listing Scraper" [ref=e1572] [cursor=pointer]:
+                      - text: Business Listing Scraper
+                      - img [ref=e1573]
+            - listitem [ref=e1339]:
+              - img "OneCompiler logo" [ref=e1445]
+              - generic [ref=e1341]:
+                - generic [ref=e1342]:
+                  - generic [ref=e1343]:
+                    - heading "OneCompiler" [level=4] [ref=e1344]
+                    - paragraph [ref=e1345]:
+                      - generic [ref=e1346]:
+                        - img [ref=e1347]
+                        - text: Hyderabad, India · Remote · Self-employed
+                      - generic [ref=e1350]: ·
+                      - generic [ref=e1351]: 1 role
+                  - generic [ref=e1352]:
+                    - paragraph [ref=e1353]: Nov 2019 — Feb 2022
+                    - paragraph [ref=e1354]: 2 yrs 4 mos
+                - list [ref=e1355]:
+                  - listitem [ref=e1356]:
+                    - generic [ref=e1359]:
+                      - heading "Ex Co-Founder | Founding Engineer" [level=5] [ref=e1360]
+                      - generic [ref=e1361]: Nov 2019 — Feb 2022
+                    - paragraph [ref=e1362]: Architected and developed an end-to-end online IDE platform using React, Next.js, React Native, Node.js, MongoDB, and Docker on AWS and Linux.
+                    - list [ref=e1363]:
+                      - listitem [ref=e1364]:
+                        - img [ref=e1365]
+                        - generic [ref=e1368]: Scaled platform to support 2 million+ users globally
+                      - listitem [ref=e1369]:
+                        - img [ref=e1370]
+                        - generic [ref=e1373]: Implemented real-time code execution and sandboxing
+                      - listitem [ref=e1374]:
+                        - img [ref=e1375]
+                        - generic [ref=e1378]: Designed core product functionality from concept to launch
+                      - listitem [ref=e1379]:
+                        - img [ref=e1380]
+                        - generic [ref=e1383]: Launched cross-platform mobile app with Flutter & Dart
+                    - generic [ref=e1384]:
+                      - generic [ref=e1385]: Next.js
+                      - generic [ref=e1386]: React
+                      - generic [ref=e1387]: Node.js
+                      - generic [ref=e1388]: MongoDB
+                      - generic [ref=e1389]: Docker
+                      - generic [ref=e1390]: AWS
+                      - generic [ref=e1391]: Flutter
+                - generic [ref=e1576]:
+                  - paragraph [ref=e1577]: Related Work
+                  - generic [ref=e1578]:
+                    - button "OneCompiler" [ref=e1579] [cursor=pointer]:
+                      - text: OneCompiler
+                      - img [ref=e1580]
+                    - button "OneCompiler Mobile" [ref=e1583] [cursor=pointer]:
+                      - text: OneCompiler Mobile
+                      - img [ref=e1584]
+            - listitem [ref=e1392]:
+              - img "SplashBI logo" [ref=e1447]
+              - generic [ref=e1394]:
+                - generic [ref=e1395]:
+                  - generic [ref=e1396]:
+                    - heading "SplashBI" [level=4] [ref=e1397]
+                    - paragraph [ref=e1398]:
+                      - generic [ref=e1399]:
+                        - img [ref=e1400]
+                        - text: Hyderabad, India
+                      - generic [ref=e1403]: ·
+                      - generic [ref=e1404]: 1 role
+                  - generic [ref=e1405]:
+                    - paragraph [ref=e1406]: 2014 — 2017
+                    - paragraph [ref=e1407]: 3 yrs 1 mo
+                - list [ref=e1408]:
+                  - listitem [ref=e1409]:
+                    - generic [ref=e1412]:
+                      - heading "Software Engineer" [level=5] [ref=e1413]
+                      - generic [ref=e1414]: 2014 — 2017
+                    - paragraph [ref=e1415]: Developed enterprise reporting UI using React and Kendo UI components. Built backend services with Java, Spring Boot, Hibernate, and Oracle DB.
+                    - list [ref=e1416]:
+                      - listitem [ref=e1417]:
+                        - img [ref=e1418]
+                        - generic [ref=e1421]: Delivered enterprise reporting solutions
+                      - listitem [ref=e1422]:
+                        - img [ref=e1423]
+                        - generic [ref=e1426]: Built reporting engine with custom query builder
+                      - listitem [ref=e1427]:
+                        - img [ref=e1428]
+                        - generic [ref=e1431]: Worked with Oracle Database and OAF framework
+                    - generic [ref=e1432]:
+                      - generic [ref=e1433]: React
+                      - generic [ref=e1434]: Kendo UI
+                      - generic [ref=e1435]: Java
+                      - generic [ref=e1436]: Spring Boot
+                      - generic [ref=e1437]: Oracle
+                - generic [ref=e1587]:
+                  - paragraph [ref=e1588]: Related Work
+                  - generic [ref=e1589]:
+                    - button "Reporting Dashboards" [ref=e1590] [cursor=pointer]:
+                      - text: Reporting Dashboards
+                      - img [ref=e1591]
+                    - button "Reporting Engine" [ref=e1594] [cursor=pointer]:
+                      - text: Reporting Engine
+                      - img [ref=e1595]
+          - generic [ref=e612]:
+            - generic [ref=e613]:
+              - img [ref=e614]
+              - heading "Education" [level=3] [ref=e617]
+            - generic [ref=e620]:
+              - heading "B.Tech, Electronics & Communication Engineering" [level=4] [ref=e621]
+              - generic [ref=e622]:
+                - generic [ref=e623]: JNTU Kakinada
+                - generic [ref=e624]: 2009 — 2013
+              - paragraph [ref=e625]: Graduated with 76%. Strong foundation in engineering principles, mathematics, and computer science fundamentals.
+          - generic [ref=e626]:
+            - generic [ref=e627]:
+              - img [ref=e628]
+              - heading "Certifications" [level=3] [ref=e631]
+            - generic [ref=e633]:
+              - generic [ref=e634]:
+                - img [ref=e636]
+                - generic [ref=e639]:
+                  - paragraph [ref=e640]: Certified Java Programmer (Java SE 7)
+                  - paragraph [ref=e641]: Oracle · 2014
+              - generic [ref=e642]:
+                - img [ref=e644]
+                - generic [ref=e647]:
+                  - paragraph [ref=e648]: MongoDB for Developers
+                  - paragraph [ref=e649]: MongoDB University · 2017
+              - generic [ref=e650]:
+                - img [ref=e652]
+                - generic [ref=e655]:
+                  - paragraph [ref=e656]: Oracle Database SQL Certified Expert
+                  - paragraph [ref=e657]: Oracle · 2015
+      - generic [ref=e659]:
+        - generic [ref=e660]:
+          - paragraph [ref=e661]: Writing
+          - heading "Notes & Articles" [level=2] [ref=e662]
+          - paragraph [ref=e663]: Lessons from building scalable systems, leading engineering teams, and shipping developer tools used by millions.
+        - generic [ref=e664]:
+          - button "🤖 AI vs Generative AI May 6, 2025 3 min read A quick guide to how general AI powers intelligent decisions, while Generative AI creates content like text, images, and code. AI Generative AI Machine Learning LLMs" [ref=e1747] [cursor=pointer]:
+            - generic [ref=e1748]:
+              - img [ref=e1750]
+              - generic [ref=e1753]:
+                - generic [ref=e1754]:
+                  - heading "🤖 AI vs Generative AI" [level=3] [ref=e1755]
+                  - img [ref=e1756]
+                - generic [ref=e1759]:
+                  - generic [ref=e1760]:
+                    - img [ref=e1761]
+                    - text: May 6, 2025
+                  - generic [ref=e1763]:
+                    - img [ref=e1764]
+                    - text: 3 min read
+                - paragraph [ref=e1767]: A quick guide to how general AI powers intelligent decisions, while Generative AI creates content like text, images, and code.
+                - generic [ref=e1768]:
+                  - generic [ref=e1769]: AI
+                  - generic [ref=e1770]: Generative AI
+                  - generic [ref=e1771]: Machine Learning
+                  - generic [ref=e1772]: LLMs
+          - button "🏗️ Microservices Best Practices Jan 10, 2025 5 min read Essential best practices for designing, developing, and deploying microservices that scale and maintain high performance. Microservices Architecture DevOps Scalability" [ref=e1773] [cursor=pointer]:
+            - generic [ref=e1774]:
+              - img [ref=e1776]
+              - generic [ref=e1779]:
+                - generic [ref=e1780]:
+                  - heading "🏗️ Microservices Best Practices" [level=3] [ref=e1781]
+                  - img [ref=e1782]
+                - generic [ref=e1785]:
+                  - generic [ref=e1786]:
+                    - img [ref=e1787]
+                    - text: Jan 10, 2025
+                  - generic [ref=e1789]:
+                    - img [ref=e1790]
+                    - text: 5 min read
+                - paragraph [ref=e1793]: Essential best practices for designing, developing, and deploying microservices that scale and maintain high performance.
+                - generic [ref=e1794]:
+                  - generic [ref=e1795]: Microservices
+                  - generic [ref=e1796]: Architecture
+                  - generic [ref=e1797]: DevOps
+                  - generic [ref=e1798]: Scalability
+      - generic [ref=e718]:
+        - generic [ref=e719]:
+          - paragraph [ref=e720]: Get in Touch
+          - heading "Let's build something great" [level=2] [ref=e721]
+          - paragraph [ref=e722]: Open to engineering leadership, advisory, and consulting work. Always happy to chat about scaling teams, system design, or developer experience.
+        - generic [ref=e723]:
+          - generic [ref=e724]:
+            - generic [ref=e725]:
+              - heading "Direct contact" [level=3] [ref=e726]
+              - paragraph [ref=e727]: The fastest way to reach me.
+              - generic [ref=e728]:
+                - link "Email trinath.anantham@gmail.com" [ref=e729] [cursor=pointer]:
+                  - /url: mailto:trinath.anantham@gmail.com
+                  - generic [ref=e730]:
+                    - img [ref=e732]
+                    - generic [ref=e735]:
+                      - paragraph [ref=e736]: Email
+                      - paragraph [ref=e737]: trinath.anantham@gmail.com
+                    - img [ref=e738]
+                - link "Phone +91 954 209 2091" [ref=e741] [cursor=pointer]:
+                  - /url: tel:+919542092091
+                  - generic [ref=e742]:
+                    - img [ref=e744]
+                    - generic [ref=e746]:
+                      - paragraph [ref=e747]: Phone
+                      - paragraph [ref=e748]: +91 954 209 2091
+                    - img [ref=e749]
+                - generic [ref=e753]:
+                  - img [ref=e755]
+                  - generic [ref=e758]:
+                    - paragraph [ref=e759]: Location
+                    - paragraph [ref=e760]: Hyderabad, India
+            - generic [ref=e761]:
+              - heading "On the web" [level=3] [ref=e762]
+              - generic [ref=e763]:
+                - link "GitHub" [ref=e764] [cursor=pointer]:
+                  - /url: https://github.com/trinathanantham
+                  - img [ref=e765]
+                  - generic [ref=e768]: GitHub
+                - link "LinkedIn" [ref=e769] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/trinath-anantham-045a19112/
+                  - img [ref=e770]
+                  - generic [ref=e774]: LinkedIn
+                - link "Website" [ref=e775] [cursor=pointer]:
+                  - /url: https://trinath.tech
+                  - img [ref=e776]
+                  - generic [ref=e779]: Website
+          - generic [ref=e780]:
+            - heading "Send a message" [level=3] [ref=e781]
+            - paragraph [ref=e782]: I'll get back to you within 24 hours.
+            - generic [ref=e783]:
+              - generic [ref=e784]:
+                - textbox "Your name" [ref=e785]
+                - textbox "Your email" [ref=e786]
+              - textbox "Subject" [ref=e787]
+              - textbox "Tell me about your project, role, or idea…" [ref=e788]
+              - button "Send message" [ref=e789] [cursor=pointer]:
+                - img
+                - text: Send message
+    - contentinfo [ref=e790]:
+      - generic [ref=e791]:
+        - generic [ref=e792]:
+          - generic [ref=e793]:
+            - generic [ref=e794]:
+              - generic [ref=e795]: TA
+              - generic [ref=e796]: Trinath Anantham
+            - paragraph [ref=e797]: I build scalable platforms, ship developer tools, and lead full-stack teams across SaaS, fintech, and AI.
+          - generic [ref=e798]:
+            - heading "Navigate" [level=4] [ref=e799]
+            - list [ref=e800]:
+              - listitem [ref=e801]:
+                - link "Home" [ref=e802] [cursor=pointer]:
+                  - /url: "#home"
+              - listitem [ref=e803]:
+                - link "Projects" [ref=e804] [cursor=pointer]:
+                  - /url: "#projects"
+              - listitem [ref=e805]:
+                - link "Stack" [ref=e806] [cursor=pointer]:
+                  - /url: "#tech-stack"
+              - listitem [ref=e807]:
+                - link "Experience" [ref=e808] [cursor=pointer]:
+                  - /url: "#education"
+              - listitem [ref=e809]:
+                - link "Writing" [ref=e810] [cursor=pointer]:
+                  - /url: "#posts"
+              - listitem [ref=e811]:
+                - link "Contact" [ref=e812] [cursor=pointer]:
+                  - /url: "#contact"
+          - generic [ref=e813]:
+            - heading "Connect" [level=4] [ref=e814]
+            - list [ref=e815]:
+              - listitem [ref=e816]:
+                - link "trinath.anantham@gmail.com" [ref=e817] [cursor=pointer]:
+                  - /url: mailto:trinath.anantham@gmail.com
+                  - img [ref=e818]
+                  - text: trinath.anantham@gmail.com
+              - listitem [ref=e821]:
+                - link "GitHub" [ref=e822] [cursor=pointer]:
+                  - /url: https://github.com/trinathanantham
+                  - img [ref=e823]
+                  - text: GitHub
+              - listitem [ref=e826]:
+                - link "LinkedIn" [ref=e827] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/trinath-anantham-045a19112/
+                  - img [ref=e828]
+                  - text: LinkedIn
+              - listitem [ref=e832]:
+                - link "trinath.tech" [ref=e833] [cursor=pointer]:
+                  - /url: https://trinath.tech
+                  - img [ref=e834]
+                  - text: trinath.tech
+        - generic [ref=e837]:
+          - paragraph [ref=e838]: © 2026 Trinath Anantham. Crafted with care.
+          - button "Back to top" [ref=e839] [cursor=pointer]:
+            - text: Back to top
+            - img [ref=e840]
