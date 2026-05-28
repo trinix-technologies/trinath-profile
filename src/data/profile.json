@@ -8,7 +8,7 @@
     "shortBio": "I build scalable platforms, ship developer tools, and lead full-stack teams across SaaS, fintech, and AI.",
     "yearsExperience": "12+",
     "currentlyAt": "Go High Level Experts",
-    "availability": "Open to advisory & senior leadership roles",
+    "availability": "Open For Freelance & Advisory",
     "available": true,
     "avatar": "/image.png",
     "resumeUrl": "/Trinath.pdf",
@@ -31,12 +31,14 @@
     { "label": "Tech Domains", "value": "8", "suffix": "+" }
   ],
   "highlights": [
-    "Currently leading Workflows, AI & Importer teams at Go High Level Experts",
-    "Co-founded OneCompiler — online IDE scaled to 2M+ users",
-    "Sr. Engineering Manager at SaaS Labs — Billing, Balance & Subscriber services",
-    "6 years at Reputation.com — grew from Senior Engineer to Engineering Manager",
-    "Architected microservices on AWS & GCP with Kubernetes",
-    "Built AI agentic workflows with LangChain & OpenAI"
+    "Migrated legacy billing to microservices — deploys hours → minutes",
+    "Built multi-tenant subscription platform for 100K+ users",
+    "Scaled RabbitMQ & Pub/Sub to 2B+ monthly events",
+    "Cut API latency 70% and infra cost 40% via Redis + CDN",
+    "Shipped real-time analytics pipelines processing 100GB+/day",
+    "Standardized CI/CD on Docker, Jenkins, Kubernetes",
+    "Rolled out Prometheus + Grafana + ELK — MTTR down 45%",
+    "Drove $500K+ annual infra savings with product & finance"
   ],
   "marquee": [
     "Engineering Leadership",
