@@ -81,9 +81,8 @@ const HeroSection = () => {
               <Button variant="outline" size="lg" asChild className="border-border/80">
                 <a
                   href={personal.resumeUrl}
-                  target="_blank"
+                  download="Trinath-Anantham-Resume.pdf"
                   rel="noopener noreferrer"
-                  download
                 >
                   <Download className="mr-2 h-4 w-4" />
                   Resume
